@@ -31,7 +31,7 @@ const homepage = () => {
     ETERNA LÁSER
   </Typography>
   <Typography variant="h6" mt={2}>
-    Centro Avanzado de Depilación Láser en Ocotal, Nueva Segovia
+    Centro Avanzado de Depilación Láser en Ocotal, Nueva Segovia.
   </Typography>
   <Box mt={4} display="flex" justifyContent="center" gap={2} flexWrap="wrap">
     <Button
