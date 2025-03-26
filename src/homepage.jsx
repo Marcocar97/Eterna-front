@@ -16,13 +16,12 @@ const homepage = () => {
   return (
     <Box sx={{ fontFamily: "sans-serif", overflowX: "hidden" }}>
       {/* HERO */}
-      
       <Box
   sx={{
-    width: "100vw", // 💥 elimina margen blanco lateral
+    mx: "auto",         // 👈 centrado horizontal automático
     background: "linear-gradient(to right, #7b1fa2, #00bcd4)",
     color: "#fff",
-    py: { xs: 6, md: 8 }, // menos padding vertical
+    py: { xs: 6, md: 8 },
     px: 2,
     textAlign: "center",
   }}
