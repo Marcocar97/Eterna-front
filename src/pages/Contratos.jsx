@@ -53,9 +53,18 @@ const Contratos = ({ clienteId }) => {
     const pageHeight = doc.internal.pageSize.getHeight();
     let cursorY = 20; // Controla la posición vertical del contenido
   
-    // 📌 Agregar el logo (ajusta la ruta si es necesario)
-    const logoPath = "public/eterna.png";
-    doc.addImage(logoPath, "PNG", 20, cursorY, 40, 20);
+    // 📌 Agregar el logo (desde URL absoluta sin base64)
+const logoUrl = "https://centroeternalaser.com/eterna.png";
+const img = new Image();
+img.crossOrigin = "anonymous";
+img.src = logoUrl;
+
+img.onload = () => {
+  doc.addImage(img, "PNG", 20, cursorY, 40, 20);
+  
+  // Aquí puedes continuar el resto del contenido del PDF dentro del onload
+
+
   
     // 📌 Nombre de la empresa y fecha alineada a la derecha
     doc.setFont("helvetica", "bold");
@@ -153,7 +162,7 @@ const Contratos = ({ clienteId }) => {
   
     // 📌 Guardar el PDF con el nombre del cliente
     doc.save(`Contrato_${contrato.Cliente.nombre}.pdf`);
-  };
+  };};
   
 
   
