@@ -54,7 +54,7 @@ const Contratos = ({ clienteId }) => {
     let cursorY = 20; // Controla la posición vertical del contenido
   
     // 📌 Agregar el logo (desde URL absoluta sin base64)
-const logoUrl = "https://centroeternalaser.com/eterna.png";
+const logoUrl = "https://www.centroeternalaser.com/eterna.png";
 const img = new Image();
 img.crossOrigin = "anonymous";
 img.src = logoUrl;
